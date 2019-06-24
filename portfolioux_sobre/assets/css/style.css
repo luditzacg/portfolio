@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+h1 {
+    font-size: 19px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+
+a {
+    text-decoration: none;
+    color: #666666;
+}
+
+a:visited {
+ color: #666666;
+}
+
+nav, footer {
+text-align: right;
+padding: 50px;
+}
+
+header {
+padding-right: 50px;
+padding-left: 50px;
+}
+
+li {
+   margin-top: 35px;
+   width: 100%;  
+   padding-right: 50px; 
+}
+
+.destaque {
+    text-decoration: underline;
+}
+
+.perfil {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.perfil__foto {
+    width: 100%;
+    height: 100%;
+}
+
+.perfil__bio {
+    width: 100%;
+    margin-top: 35px;
+    line-height: 1.5;
+}
+
+.contato {
+    display: flex;
+    align-items: center;
+    
+}
+
+.contato__img {
+    width: 25px;
+    margin-left: 10px;
+}
+
+.contato__texto {
+    text-align: left;
+    width: 50%;
+    margin-left: 35px;
+}
+
+@media (min-width: 700px) and (orientation: landscape) {
+    .perfil {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    .perfil__foto {
+        width: 30%;
+    }
+
+    .perfil__bio {
+        width: 60%
+    }
+
+    .contato {
+        display: flex;
+        align-items: center;
+        
+    }
+}
